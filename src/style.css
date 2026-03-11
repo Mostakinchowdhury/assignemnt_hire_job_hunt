@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+@theme {
+  --color-black: #002c5c;
+  --color-dark-gray: #323b49;
+  --color-gray: #64748b;
+  --color-primary: #3b82f6;
+  --color-green: #10b981;
+  --color-red: #ef4444;
+  --color-white: #ffffff;
+  --color-stroke: #f1f2f4;
+  --color-mainbg: #f8fafc;
+  --drop-shadow-main: 0 4px 4px rgba(0, 0, 0, 0.25);
+  /* x=0 y=4 blur=4 spread=0 color black 25% */
+}
+@layer base {
+  body {
+    font-family: 'Geist', sans-serif;
+    background-color: #f8fafc;
+  }
+
+  h1 {
+    @apply font-bold text-[32px] leading-8;
+  }
+
+  h2 {
+    @apply font-bold text-2xl;
+  }
+  button {
+    @apply cursor-pointer block;
+  }
+
+  h3 {
+    @apply font-semibold text-xl;
+  }
+}
+
+@layer components {
+  .subtitle {
+    @apply font-semibold text-lg leading-[26px];
+  }
+
+  .body1 {
+    @apply text-base leading-[22px];
+  }
+
+  .body2 {
+    @apply text-sm leading-[20px];
+  }
+}

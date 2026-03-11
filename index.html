@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/src/style.css" rel="stylesheet">
+  <title>Job Tracker</title>
+</head>
+
+<body>
+  <main class="container max-w-6xl mx-auto p-8 box-border space-y-4">
+    <!-- title -->
+    <h1 class="text-black">Job Application Tracker</h1>
+    <!-- dashboard section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
+      <div class="p-5 space-y-4 min-h-[97px] bg-white stroke-1 stroke-stroke rounded-lg" id="das_total">
+        <p class="font-medium text-sm text-dark-gray">Total</p>
+        <h2 class="text-black">8</h2>
+      </div>
+      <div class="p-5 min-h-[97px] bg-white stroke-1 stroke-stroke rounded-lg space-y-4" id="das_interview">
+        <p class="font-medium text-sm text-dark-gray">Interview</p>
+        <h2 class="text-green">2</h2>
+      </div>
+      <div class="p-5 space-y-4 min-h-[97px] bg-white stroke-1 stroke-stroke rounded-lg" id="das_rejected">
+        <p class="font-medium text-sm text-dark-gray">Rejected</p>
+        <h2 class="text-red">1</h2>
+      </div>
+    </section>
+    <!-- filter meta -->
+    <section class="flex justify-between items-center gap-5">
+      <h3 class="text-black">Available Jobs</h3>
+      <p class="text-gray text-[16px] font-medium" id="available_jobs">8 jobs</p>
+    </section>
+    <!-- Button to switch Tabs -->
+    <section class="gap-1.5 flex items-center">
+      <button
+        class="p-3 rounded-sm bg-primary font-semibold text-sm text-white stroke-1 stroke-[#F1F2F4] tab">All</button>
+      <button
+        class="p-3 rounded-sm bg-white font-semibold text-sm text-gray stroke-1 stroke-[#F1F2F4] tab">Interview</button>
+      <button
+        class="p-3 rounded-sm bg-white font-semibold text-sm text-gray stroke-1 stroke-[#F1F2F4] tab">Rejected</button>
+    </section>
+    <!-- job section -->
+    <section class="gap-4 flex flex-col" id="jobs_con">
+      <!-- one card -->
+      <div class="p-6 space-y-5 bg-white rounded-lg stroke-1 stroke-stroke">
+        <!-- introduct part -->
+        <div class="flex justify-between items-center">
+          <div class="space-y-2">
+            <p class="subtitle text-black">Mobile First Corp</p>
+            <p class="body1 text-gray">React Native Developer</p>
+          </div>
+          <button class="size-8 border-[1px]  border-stroke rounded-full flex justify-center items-center">
+            <img src="/delete.svg" alt="delete svg" class="size-4 text-gray">
+          </button>
+        </div>
+        <!-- price part -->
+        <p class="body2 text-gray">
+          Remote
+          •
+          Full-time
+          •
+          $130,000 - $175,000
+        </p>
+        <!-- applied button -->
+        <button class="font-medium text-sm bg-[#EEF4FF] rounded-sm p-3">Not Applied</button>
+        <p class="body2 text-dark-gray">Build cross-platform mobile applications using React Native. Work on products
+          used by millions of users
+          worldwide.</p>
+        <!-- buttons int - rej -->
+        <div class="flex items-center gap-2">
+          <button
+            class="border-2 border-green text-green font-semibold text-sm p-3 transition-colors duration-200 hover:bg-green hover:text-white">Interview</button>
+          <button
+            class="border-2 border-red text-red font-semibold text-sm p-3 transition-colors duration-200 hover:bg-red hover:text-white">Rejected</button>
+        </div>
+      </div>
+      <div class="p-6 space-y-5 bg-white rounded-lg stroke-1 stroke-stroke">
+        <!-- introduct part -->
+        <div class="flex justify-between items-center">
+          <div class="space-y-2">
+            <p class="subtitle text-black">Mobile First Corp</p>
+            <p class="body1 text-gray">React Native Developer</p>
+          </div>
+          <button class="size-8 border-[1px]  border-stroke rounded-full flex justify-center items-center">
+            <img src="/delete.svg" alt="delete svg" class="size-4 text-gray">
+          </button>
+        </div>
+        <!-- price part -->
+        <p class="body2 text-gray">
+          Remote
+          •
+          Full-time
+          •
+          $130,000 - $175,000
+        </p>
+        <!-- applied button -->
+        <button class="font-medium text-sm bg-[#EEF4FF] rounded-sm p-3">Not Applied</button>
+        <p class="body2 text-dark-gray">Build cross-platform mobile applications using React Native. Work on products
+          used by millions of users
+          worldwide.</p>
+        <!-- buttons int - rej -->
+        <div class="flex items-center gap-2">
+          <button
+            class="border-2 border-green text-green font-semibold text-sm p-3 transition-colors duration-200 hover:bg-green hover:text-white">Interview</button>
+          <button
+            class="border-2 border-red text-red font-semibold text-sm p-3 transition-colors duration-200 hover:bg-red hover:text-white">Rejected</button>
+        </div>
+      </div>
+      <div class="p-6 space-y-5 bg-white rounded-lg stroke-1 stroke-stroke">
+        <!-- introduct part -->
+        <div class="flex justify-between items-center">
+          <div class="space-y-2">
+            <p class="subtitle text-black">Mobile First Corp</p>
+            <p class="body1 text-gray">React Native Developer</p>
+          </div>
+          <button class="size-8 border-[1px]  border-stroke rounded-full flex justify-center items-center">
+            <img src="/delete.svg" alt="delete svg" class="size-4 text-gray">
+          </button>
+        </div>
+        <!-- price part -->
+        <p class="body2 text-gray">
+          Remote
+          •
+          Full-time
+          •
+          $130,000 - $175,000
+        </p>
+        <!-- applied button -->
+        <button class="font-medium text-sm bg-[#EEF4FF] rounded-sm p-3">Not Applied</button>
+        <p class="body2 text-dark-gray">Build cross-platform mobile applications using React Native. Work on products
+          used by millions of users
+          worldwide.</p>
+        <!-- buttons int - rej -->
+        <div class="flex items-center gap-2">
+          <button
+            class="border-2 border-green text-green font-semibold text-sm p-3 transition-colors duration-200 hover:bg-green hover:text-white">Interview</button>
+          <button
+            class="border-2 border-red text-red font-semibold text-sm p-3 transition-colors duration-200 hover:bg-red hover:text-white">Rejected</button>
+        </div>
+      </div>
+      <div class="p-6 space-y-5 bg-white rounded-lg stroke-1 stroke-stroke">
+        <!-- introduct part -->
+        <div class="flex justify-between items-center">
+          <div class="space-y-2">
+            <p class="subtitle text-black">Mobile First Corp</p>
+            <p class="body1 text-gray">React Native Developer</p>
+          </div>
+          <button class="size-8 border-[1px]  border-stroke rounded-full flex justify-center items-center">
+            <img src="/delete.svg" alt="delete svg" class="size-4 text-gray">
+          </button>
+        </div>
+        <!-- price part -->
+        <p class="body2 text-gray">
+          Remote
+          •
+          Full-time
+          •
+          $130,000 - $175,000
+        </p>
+        <!-- applied button -->
+        <button class="font-medium text-sm bg-[#EEF4FF] rounded-sm p-3">Not Applied</button>
+        <p class="body2 text-dark-gray">Build cross-platform mobile applications using React Native. Work on products
+          used by millions of users
+          worldwide.</p>
+        <!-- buttons int - rej -->
+        <div class="flex items-center gap-2">
+          <button
+            class="border-2 border-green text-green font-semibold text-sm p-3 transition-colors duration-200 hover:bg-green hover:text-white">Interview</button>
+          <button
+            class="border-2 border-red text-red font-semibold text-sm p-3 transition-colors duration-200 hover:bg-red hover:text-white">Rejected</button>
+        </div>
+      </div>
+      <div class="p-6 space-y-5 bg-white rounded-lg stroke-1 stroke-stroke">
+        <!-- introduct part -->
+        <div class="flex justify-between items-center">
+          <div class="space-y-2">
+            <p class="subtitle text-black">Mobile First Corp</p>
+            <p class="body1 text-gray">React Native Developer</p>
+          </div>
+          <button class="size-8 border-[1px]  border-stroke rounded-full flex justify-center items-center">
+            <img src="/delete.svg" alt="delete svg" class="size-4 text-gray">
+          </button>
+        </div>
+        <!-- price part -->
+        <p class="body2 text-gray">
+          Remote
+          •
+          Full-time
+          •
+          $130,000 - $175,000
+        </p>
+        <!-- applied button -->
+        <button class="font-medium text-sm bg-[#EEF4FF] rounded-sm p-3">Not Applied</button>
+        <p class="body2 text-dark-gray">Build cross-platform mobile applications using React Native. Work on products
+          used by millions of users
+          worldwide.</p>
+        <!-- buttons int - rej -->
+        <div class="flex items-center gap-2">
+          <button
+            class="border-2 border-green text-green font-semibold text-sm p-3 transition-colors duration-200 hover:bg-green hover:text-white">Interview</button>
+          <button
+            class="border-2 border-red text-red font-semibold text-sm p-3 transition-colors duration-200 hover:bg-red hover:text-white">Rejected</button>
+        </div>
+      </div>
+      <!-- no available -->
+
+    </section>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
