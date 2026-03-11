@@ -19,7 +19,7 @@ let jobs = [
     type: 'Remote',
     isfulltime: true,
     price: '$90,000 - $110,000',
-    status: 'INTERVIEW',
+    status: 'NOT APPLIED',
     short_description: 'Build responsive UI using React and Tailwind CSS.',
   },
   {
@@ -29,7 +29,7 @@ let jobs = [
     type: 'Remote',
     isfulltime: true,
     price: '$100,000 - $120,000',
-    status: 'REJECTED',
+    status: 'NOT APPLIED',
     short_description: 'Create REST APIs using Node.js and PostgreSQL.',
   },
   {
@@ -49,7 +49,7 @@ let jobs = [
     type: 'Remote',
     isfulltime: true,
     price: '$95,000 - $115,000',
-    status: 'INTERVIEW',
+    status: 'NOT APPLIED',
     short_description: 'Develop reusable React components and manage state.',
   },
   {
@@ -69,7 +69,7 @@ let jobs = [
     type: 'Remote',
     isfulltime: true,
     price: '$100,000 - $130,000',
-    status: 'REJECTED',
+    status: 'NOT APPLIED',
     short_description: 'Manage CI/CD pipelines and cloud infrastructure.',
   },
   {
@@ -89,7 +89,7 @@ let jobs = [
     type: 'Remote',
     isfulltime: true,
     price: '$105,000 - $125,000',
-    status: 'INTERVIEW',
+    status: 'NOT APPLIED',
     short_description: 'Develop cross-platform apps using React Native.',
   },
   {
