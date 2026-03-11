@@ -18,17 +18,23 @@ matched elements as a NodeList instead of returning the first matched element.
 
 2. How do you create and insert a new element into the DOM?
 
+Answer:
+
 At first, I create an element using document.createElement("tagname") and then
 write its textContent or innerHTML, and then I use (its
 parent).appendChild(recently created element).
 
 3. What is Event Bubbling? And how does it work?
 
+Answer:
+
 Event bubbling is a process that means when any element triggers an event, it
 bubbles up to its parent and then to the grandparent like a bubble. It triggers
 its parent also. The process continues until it reaches the body.
 
 4. What is Event Delegation in JavaScript? Why is it useful?
+
+Answer:
 
 Event delegation is a process where we attach an event listener to a parent
 element instead of attaching it to multiple child elements. Because of event
